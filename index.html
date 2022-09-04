@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/style.css" rel="stylesheet">
+    <title>Davy Motte</title>
+</head>
+<body>
+
+
+    <div class="accueil-bg-magic pt-6 pb-6 min-h-500 sm:pb-15 md:min-h-650">
+
+        <!------------ Navbar ------------>
+        
+                <nav class="hidden max-w-7xl mx-auto relative md:flex items-center justify-center">
+        
+        
+                    <div class=" md:left-0 md:inline md:absolute">
+                        <a href="#presentation">
+                            <img
+                            class="ml-4 w-auto h-12 rounded-full"
+                            src="images/logoOeil.jpeg"
+                            alt="icon logo"/>
+                        </a>
+                    </div>
+                    <ul class="pl-8 md:flex md:space-x-10">
+                        <li>
+                            <a href="#presentation" class="font-medium text-lg text-black-500 hover:text-blue-500">
+                                 Présentation 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#apropos" class="font-medium text-lg text-black-500 hover:text-blue-500">
+                                 A Propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#competences" class="font-medium text-lg text-black-500 hover:text-blue-500">
+                                 Compétences
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="font-medium text-lg text-black-500 hover:text-blue-500">
+                                 Contact
+                            </a>
+                        </li>
+                    </ul>
+        
+                </nav>
+        
+        <!-- nav mobile -->
+        
+        <nav class="absolute top-2 w-11/12 left-1/2 transform -translate-x-1/2 shadow-md ring-1 ring-black ring-opacity-5 p-1 
+        md:hidden rounded-lg bg-white">
+        
+        <div class="px-5 h-16 flex items-center justify-between">  
+            <a href="#presentation">
+            <img src="images/logoOeil.jpeg" alt="logo" class="h-8 w-auto sm:h-10">
+            </a>
+        
+            <div class="-mr-2">
+                <button class="icone-toggle bg-white hover:bg-gray-50 hover:shadow-sm rounded-md p-2 inline-flex items-center justify-center ring-1 ring-black ring-opacity-20">
+                    <img src="images/burger-icon.jpeg" alt="icone menu" class="h-6 w-6">
+                </button>
+            </div>
+        </div>
+        
+        <ul class="toggle-menu hidden p-2">
+        
+            <li>
+                <a href="#presentation" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    Presentation
+                </a>
+            </li>
+            <li>
+                <a href="#apropos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    A propos
+                </a>
+            </li>
+            <li>
+                <a href="#competences" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    Compétences
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+        
+        </nav>
+        
+        <!------------ Hero ------------>
+        
+                <div id="presentation" class="mt-24 px-4 text-center sm:mt-15">
+        
+                <h1 class="text-2xl tracking-tight font-bold text-gray-800 sm:text-4xl md:text-5xl">
+                    <span class="block xl:inline">Bienvenue sur ma</span>
+                    <span class="block text-blue-500 xl:inline">page</span>
+                </h1>
+                </div>
+
+                <section class="mt-20 relative flex flex-col lg:flex-row lg:mt-10 lg:mx-24">
+        
+                    <div class="px-10 pb-10 pt-10 w-full order-1 text-center md:py-24 lg:w-1/2 lg:order-1">
+
+                        <h2 class="font-bold text-gray-800 text-md sm:text-lg md:text-xl">
+                            Je me présente,
+                        </h2>
+
+                        <p class="mt-3 text-lg mx-auto text-black-800 sm:text-xl md:mt-5 md:max-w-md">
+                            Davy Motte, 32 ans, Développeur Front-End tout juste sorti de formation, en quête de savoirs et de connaissances dans ce domaine.
+                        </p>
+                        <p class="mt-3 text-lg mx-auto text-black-800 sm:text-xl md:mt-5 md:max-w-md">
+                            Je souhaite évoluer dans les secteurs du Web design et de l'intégration Web.
+                        </p>
+                        
+                    </div>
+            
+                    <div class="px-10 h-96 md:px-20 w-10/12 relative  order-2 lg:pl-20 lg:static lg:w-1/2 lg:h-full lg:order-2">
+            
+                        <img 
+                        src="images/0.jpg"
+                        alt="photo Davy"
+                        class="absolute pb-5 z-50 w-full h-full object-cover object-center rounded-full lg:w-1/3">
+            
+                    </div>
+
+                </section>
+            </br>
+    
+
+        <!------------- Separation bande bleue ------------->
+        
+            <section class="bg-gradient-to-r from-blue-700 to-blue-400 py-20 px-4 sm:py-24 sm:px-6 lg:px-8 lg:py-32 text-center">
+        
+            </section>
+
+
+        <!------------ A propos ------------>
+        
+            <section id="apropos" class="text-center">
+        
+                <div class="px-10 pt-10 w-full md:py-20">
+                    
+                    <h2 class="font-bold text-gray-800 text-md sm:text-lg md:text-xl">
+                        A propos de moi,
+                    </h2>
+
+                    <p class="mt-3 text-lg mx-auto text-black-800 sm:text-xl md:mt-5 md:max-w-3xl">
+                        Suite à l'obtention d'un Baccalauréat en Sciences Economiques et Sociales, j'ai travaillé plusieurs années comme saisonnier jusqu'au premier confinement où je faisais de la mise en rayon pour une enseigne dans l'alimentaire.  
+                    </p>
+
+                    <p class="mt-3 text-lg mx-auto text-black-800 sm:text-xl md:mt-5 md:max-w-3xl">
+                        Le confinement m'a permis de prendre le temps de réfléchir à quelle orientation choisir, je savais déjà que je souhaitais m'orienter vers l'informatique sans savoir dans quel domaine j'allais me diriger. C'est à force de faire des recherches, assister à des réunions d'informations ou en échangeant avec différents professionnels dans ce secteur que j'ai découvert le développement Web. Et je me suis donc inscrit dans une formation de Développeur Web et Web Mobile d'une durée d'un an en Ile de France.  
+                    </p>
+
+                    <p class="mt-3 text-lg mx-auto text-black-800 sm:text-xl md:mt-5 md:max-w-3xl">
+                        Pendant ma formation, j'ai vite compris que je souhaitais me spécialiser dans le développement côté front-end et le Web design en général.
+                    </p>
+
+                    <p class="mt-3 text-lg mx-auto text-black-800 sm:text-xl md:mt-5 md:max-w-3xl">
+                        Lors de ma formation, j’ai eu l’occasion de faire un stage de plusieurs mois chez Grauw, une agence digitale basée à Clichy, elle est spécialisée dans la création de sites internet et d’outils digitaux. J’ai adoré mon stage, il m'a permis d'avoir une première approche du métier. Confirmant mon désir de vouloir avancer et m'épanouir dans cette voie.
+                    </p>
+                   
+                </div>
+        
+            </section>
+
+
+        <!------------- Separation style tribal ------------->
+        
+             <section class="py-8 px-4 sm:py-10 sm:px-6 lg:px-8 lg:py-12 flex items-center justify-center">
+                <img src="images/separateur.svg"
+                     alt="separateur"
+                     class="w-50 content-center items-center justify-center">
+        
+            </section>
+        
+        
+        <!--------- Compétence ------------->
+        
+        <section id="competences" class="text-center max-w-7xl mx-auto py-5 px-4 sm:px-6 lg:mt-10 lg:px-8">
+
+            <h2 class="font-bold text-gray-800 text-md sm:text-lg md:text-xl">
+                Mes compétences,
+            </h2>
+
+            <p class="mt-3 text-lg mx-auto text-black-800 sm:text-xl md:mt-5 md:max-w-2xl">
+                J'ai eu l'occasion de découvrir et d'apprendre différents langages et logiciels, que ce soit seul, en formation ou durant mon stage.  
+            </p>
+
+            <div class="max-w-6xl sm:mx-auto mt-10 md:px-5">
+
+                <div class="overflow-x-auto rounded-lg">
+                    <table class="w-full">
+        
+                        <!-- entete tableau -->
+        
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="border-2 border-slate-400 px-2 sm:px-4 md:px-6 py-4 text-center text-sm md:text-md lg:text-lg font-medium text-gray-800 uppercase tracking-wider">
+                                    Technologies
+                                </th>
+                                 <th class="border-2 border-slate-400 px-2 sm:px-4 md:px-6 py-4 text-center text-sm md:text-md lg:text-lg font-medium text-gray-800 uppercase tracking-wider">
+                                    Apprentissage
+                                </th>
+                            </tr>
+                        </thead>
+        
+                        <!-- 1 HTML -->
+        
+                        <tbody>
+                            <tr class="bg-gray-200">
+                                
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    HTML
+                                </td>
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    <p>
+                                        seul,
+                                    </p>
+                                    <p>
+                                        en formation,
+                                    </p>
+                                    <p>
+                                        en stage
+                                    </p>
+                                </td>
+                            </tr>
+        
+                        <!-- 2 CSS -->
+        
+                            <tr class="bg-gray-50">
+                                
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    CSS
+                                </td>
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    <p>
+                                        seul,
+                                    </p>
+                                    <p>
+                                        en formation,
+                                    </p>
+                                    <p>
+                                        en stage
+                                    </p>
+                                </td>
+                                </td>
+                            </tr>
+        
+                            <!-- 3 WordPress -->
+        
+                            <tr class="bg-gray-200">
+                                
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    WordPress
+                                </td>
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    <p>
+                                        seul,
+                                    </p>
+                                    <p>
+                                        en formation,
+                                    </p>
+                                    <p>
+                                        en stage
+                                    </p>
+                                </td>
+                            </tr>
+
+                         <!-- 4 PhotoShop -->
+        
+                            <tr class="bg-gray-50">
+                                
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    PhotoShop
+                                </td>
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                <p>
+                                    seul,
+                                </p>
+                                <p>
+                                    en formation
+                                </p>
+                                </td>
+                            </tr>
+        
+                           
+                
+                          <!-- 5 TailwindCSS -->
+        
+                            <tr class="bg-gray-200">
+                                
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    TailwindCSS
+                                </td>
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    <p>
+                                        seul
+                                    </p> 
+                                    <p>
+                                        en stage
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- 6 JavaScript -->
+        
+                            <tr class="bg-gray-50">
+                                
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    JavaScript
+                                </td>
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    <p>
+                                        seul,
+                                    </p>  
+                                    <p>
+                                        en stage
+                                    </p>
+                                </td>    
+                            </tr>
+
+                            <!-- 7 Figma -->
+        
+                            <tr class="bg-gray-200">
+                                
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    Figma
+                                </td>
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    en formation
+                                </td>
+                            </tr>
+        
+                            <!-- 8 Nuxt -->
+        
+                            <tr class="bg-gray-50">
+                                
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    Nuxt
+                                </td>
+                                <td class="px-2 md:px-4 lg:px-6 py-4 whitespace-nowrap text-sm md:text-md lg:text-lg font-medium text-gray-900">
+                                    en stage
+                                </td>    
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-10 text-lg mx-auto text-black-800 sm:text-xl md:max-w-2xl">
+                Vous pouvez aussi découvrir quelques templates de différentes sections réalisé avec TailwindCSS en cliquant sur le bouton ci-dessous.
+            </p>
+
+            <div class="flex justify-center ">
+                <button class="pl-5 text-center my-10 block">
+            <a 
+                    href="templates/templatesTailwind.html"
+                    class="text-white bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-yellow-500 focus:ring focus:ring-purple-500 font-medium rounded-full text-sm shadow-md px-5 py-2.5 text-center mr-2 mb-2"> 
+                        Quelques templates
+            </a>
+                </button>
+            </div>
+
+        </section>
+        
+        <!------------- Separation bande bleue ------------->
+        
+        <section class="bg-gradient-to-r from-blue-700 to-blue-400 py-20 px-4 sm:py-24 sm:px-6 lg:px-8 lg:mt-10 lg:py-32 text-center">
+        
+        </section>
+        
+
+            <!-------- contact ---------->
+        
+        <section id="contact">
+            <div class="px-10 pt-24 w-full">
+            <h2 class="font-bold text-gray-800 text-md text-center sm:text-lg md:text-xl">
+                Prendre contact,
+            </h2>
+            <p class="mt-3 text-lg mx-auto text-black-800 sm:text-xl md:mt-5 md:max-w-xl">
+                Pour prendre contact avec moi, c'est trés simple, vous pouvez me joindre sur l'adresse e-mail suivante : <span class="italic"> davymotte@gmail.com </span> ou sur mon profil Linkedin en cliquant sur le bouton ci-dessous.
+            </p>
+           
+            </div>
+            <div class="flex justify-center ">
+            <button class="pl-5 text-center my-10 block">
+                <a 
+            href="https://www.linkedin.com/in/davy-motte/"
+            class="text-white bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-yellow-500 focus:ring focus:ring-purple-500 font-medium rounded-full text-sm shadow-md px-5 py-2.5 text-center mr-2 mb-2">
+            Mon profil Linkedin
+                </a>
+            </button>
+        </section>
+    </div>
+        
+<script src="app.js"></script>
+</body>
+</html>
